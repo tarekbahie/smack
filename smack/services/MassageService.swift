@@ -15,6 +15,7 @@ class MassageService {
     
     var channels = [C]()
     var messages = [Message]()
+    var unreadChannels = [String]()
     var selectedChannel : C?
     
     func finAllChannel(completion : @escaping CompletionHandler ){
@@ -55,7 +56,7 @@ class MassageService {
                         let id = item["_id"].stringValue
                         let userAvatarColor = item["userAvatarColor"].stringValue
                         let timeStamp = item["timeStamp"].stringValue
-                        let message = Message(message : messageBody,userName : userName, channelId : channelId, userAvatar : userAvatar, userAvatarColor : userAvatarColor, Id : id, timeStamp: timeStamp)
+                        let message = Message(message : messageBody,userName : userName, channelId : channelId, userAvatar : userAvatar, userAvatarColor : userAvatarColor, id : id, timeStamp: timeStamp)
                         self.messages.append(message)
                         
                     }

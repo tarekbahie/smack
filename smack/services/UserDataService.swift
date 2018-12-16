@@ -70,6 +70,7 @@ class UserDataService{
         AuthService.instance.authToken = ""
         AuthService.instance.userEmail = ""
         MassageService.instance.clearChannels()
+        MassageService.instance.clearMessages()
     }
 
 
