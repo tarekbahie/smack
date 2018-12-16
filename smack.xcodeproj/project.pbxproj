@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4712A38D21C6A958000EEB88 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712A38C21C6A957000EEB88 /* KeyboardBoundView.swift */; };
 		47331CBE21BED87C0023DB42 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47331CBD21BED87C0023DB42 /* AuthService.swift */; };
 		47331CC021BEE83F0023DB42 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47331CBF21BEE83F0023DB42 /* RoundedCorner.swift */; };
 		47331CC221BEFFA60023DB42 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47331CC121BEFFA60023DB42 /* UserDataService.swift */; };
 		47331CC421BF0DA30023DB42 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47331CC321BF0DA30023DB42 /* AvatarPickerVC.swift */; };
 		47331CC621BF0FBA0023DB42 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47331CC521BF0FBA0023DB42 /* AvatarCell.swift */; };
+		4734CCA721C5AA9D0020978C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734CCA621C5AA9D0020978C /* Message.swift */; };
 		473AA85E21C5267C001B953F /* MassageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AA85D21C5267C001B953F /* MassageService.swift */; };
 		473AA86021C526B1001B953F /* C.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AA85F21C526B1001B953F /* C.swift */; };
 		473AA86221C52F30001B953F /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AA86121C52F30001B953F /* ChannelCell.swift */; };
@@ -38,11 +40,13 @@
 
 /* Begin PBXFileReference section */
 		4237752C3B924E9FB4912EC6 /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
+		4712A38C21C6A957000EEB88 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		47331CBD21BED87C0023DB42 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		47331CBF21BEE83F0023DB42 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		47331CC121BEFFA60023DB42 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		47331CC321BF0DA30023DB42 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		47331CC521BF0FBA0023DB42 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		4734CCA621C5AA9D0020978C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		473AA85D21C5267C001B953F /* MassageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageService.swift; sourceTree = "<group>"; };
 		473AA85F21C526B1001B953F /* C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = C.swift; sourceTree = "<group>"; };
 		473AA86121C52F30001B953F /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				4795989C21C126F900F16519 /* CircleImage.swift */,
 				4795989E21C1290A00F16519 /* ColorPlaceHolder.swift */,
 				473AA86121C52F30001B953F /* ChannelCell.swift */,
+				4712A38C21C6A957000EEB88 /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				473AA85F21C526B1001B953F /* C.swift */,
+				4734CCA621C5AA9D0020978C /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 			files = (
 				476C3DCC21BAEC7800B0E4C5 /* ChannelVC.swift in Sources */,
 				47331CC421BF0DA30023DB42 /* AvatarPickerVC.swift in Sources */,
+				4712A38D21C6A958000EEB88 /* KeyboardBoundView.swift in Sources */,
 				476C3DCA21BAEC6200B0E4C5 /* ChatVC.swift in Sources */,
 				4795989D21C126F900F16519 /* CircleImage.swift in Sources */,
 				473AA86521C5379E001B953F /* AddChannelVc.swift in Sources */,
@@ -349,6 +356,7 @@
 				473AA86821C53F10001B953F /* SocketService.swift in Sources */,
 				476C3DD321BBC52F00B0E4C5 /* LoginVC.swift in Sources */,
 				476C3DCE21BAF49E00B0E4C5 /* GradientView.swift in Sources */,
+				4734CCA721C5AA9D0020978C /* Message.swift in Sources */,
 				47331CC621BF0FBA0023DB42 /* AvatarCell.swift in Sources */,
 				476C3DAF21BAAEF800B0E4C5 /* AppDelegate.swift in Sources */,
 				476C3DC521BAD4AB00B0E4C5 /* SWRevealViewController.m in Sources */,
