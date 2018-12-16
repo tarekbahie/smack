@@ -8,16 +8,46 @@
 
 import UIKit
 
-class ChatVC: UIViewController {
+class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MassageService.instance.messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageCell{
+            let message = MassageService.instance.messages[indexPath.row]
+            cell.configureCell(message: message)
+            return cell
+        }else{
+            return UITableViewCell()
+        }
+    }
+    
 
     @IBOutlet weak var channelNameLbl: UILabel!
     @IBOutlet weak var menuBtn: UIButton!
     
     @IBOutlet weak var messageTxtBox: ColorPlaceHolder!
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        tableView.estimatedRowHeight = 80.0
+        tableView.rowHeight = UITableView.automaticDimension
         
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.handleTap))
@@ -80,6 +110,9 @@ class ChatVC: UIViewController {
     func getMessages(){
         guard let channelId = MassageService.instance.selectedChannel?.channelId else{return}
         MassageService.instance.findAllMessagesForChannel(channelId: channelId) { (success) in
+            if success{
+                self.tableView.reloadData()
+            }
             
         }
     }
